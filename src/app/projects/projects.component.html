@@ -1,0 +1,22 @@
+<div class="content w-full p-20">
+
+  <h1 class="p-relative">Projects</h1>
+  <div class="heading c-black mb-20 txt-c">My Projects</div>
+  <section class="project-section">
+  
+    <div class="project-container">
+      <div class="project-card" *ngFor="let project of projects">
+        <img [src]="project.imgSrc" class="project-img" alt="{{ project.title }}">
+        <div class="project-content">
+          <h1 class="project-title">{{ project.title }}</h1>
+          <p class="project-info">{{ project.description }}</p>
+          <div class="project-btn-grp">
+            <a [href]="project.repoLink" target="_blank" class="project-btn github">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>

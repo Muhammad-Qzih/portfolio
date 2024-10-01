@@ -1,0 +1,15 @@
+<div class="content w-full p-20">
+  <h1 class="p-relative">Skills</h1>
+  <div class="container">
+    <div class="heading c-black mb-20 txt-c">My Skills</div>
+
+    <div class="box-container gap-15">
+    
+      <div *ngFor="let skill of skills" class="box bg-white p-30 rad-6">
+        <img [src]="skill.img" [alt]="skill.name" class="icon h-80 p-10">
+        <h3 class="c-black fs-22 mt-10">{{ skill.name }}</h3>
+        <p class="c-grey fs-15">{{ skill.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>

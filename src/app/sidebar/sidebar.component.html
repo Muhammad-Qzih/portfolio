@@ -1,0 +1,20 @@
+<div class="page d-flex">
+  <div class="sidebar bg-white p-20 p-relative">
+    <div class="profile">
+      <img src="logo.jpeg" alt="profile_picture">
+    </div>
+    <h3 class="p-relative txt-c mt-0">Muhamamd Qzih</h3>
+    <ul>
+
+      <li *ngFor="let item of navItems">
+        <a class="d-flex align-center fs-14 c-black rad-6 p-10" 
+           [routerLink]="item.link" 
+           routerLinkActive="active" 
+           ariaCurrentWhenActive="page">
+          <i [class]="item.icon"></i> 
+          <span>{{ item.label }}</span> 
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
